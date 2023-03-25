@@ -1,4 +1,4 @@
-module.exports = [
+const pokes = [
   {
     id: "001",
     name: "Bulbasaur",
@@ -50958,3 +50958,8 @@ module.exports = [
     }
   }
 ];
+
+module.exports = {
+	// object shorthand
+	pokes,
+};
