@@ -1,0 +1,27 @@
+{
+  "name": "unit-2-hw-pokedex",
+  "version": "1.0.0",
+  "description": "# Pokedex",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraBoBora/unit-2-hw-pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauraBoBora/unit-2-hw-pokedex/issues"
+  },
+  "homepage": "https://github.com/LauraBoBora/unit-2-hw-pokedex#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.3"
+  }
+}

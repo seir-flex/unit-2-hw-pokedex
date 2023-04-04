@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon App</title>
+</head>
+<body>
+    <h1>Add New</h1>
+    <div>
+        <form action="/pokemon" method="post">
+            <fieldset>
+                <legend>Create a New Pokemon</legend>
+                <label>
+                    NAME:<input type="text" name="name" placeholder="enter Pokemon name" />
+                </label>
+                <label>
+                    IMAGE:<input type="url" name="image" placeholder="enter image url" />
+                </label>
+                <label>
+                    TYPE:<input type="drop-down" name="type" />
+                </label>
+            </fieldset>
+            <input type="submit" value="create new Pokemon" />
+        </form>
+    </div>
+
+    <a href="/pokemon">Back to Index</a>
+</body>
+</html>
