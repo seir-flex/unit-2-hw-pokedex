@@ -1,13 +1,13 @@
 <%- include('../header.ejs') %>
-    <h1>This is an index of my Pokemon</h1>
-    <div class="container-fluid">
+    <h1 class="display-4" style="text-align: center">This is an Index of my Pokemon</h1>
+    <h3 class="display-6" style="text-align: center">Also Known As Pokedex</h3>
+    <div class="row">
     <% for(let i = 0; i < pokes.length; i++) { %>
-        <div class="row">
-            <div class="col-sm-4"><a href="/pokemon/<%= i %>">
-            <img src=<%= pokes[i].img %> alt="pokemon picture">
-            <h3>Name: <%= pokes[i].name %></h3>
-        </a></div> <% if (i % 3 == 0) { %> </div> <% } %>
+            <div class="col-sm-3"><a href="/pokemon/<%= i %>">
+            <img src="<%= pokes[i].img %>" class="img-thumbnail" style="width: 200px; height: 200px" alt="pokemon picture">
+            <h3><%= pokes[i].name %></h3>
+        </a></div>
     <% } %>
-    </div>
+    </div></div>
 </body>
 </html>

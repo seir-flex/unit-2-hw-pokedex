@@ -4,8 +4,9 @@
     <%- include("../header.ejs") %>
     <main>
           <h2><%= poke.name %></h2>
-          <img src=<%= poke.img %> alt="pokemon picture">
+          <img src="<%= poke.img %>" alt="pokemon picture">
           <a href="/pokemon"><button>Back to PokeDex</button></a>
+          <a href="/pokemon/<%= pokeID %>/edit"><button>Edit</button></a>
           <form action="/pokemon/<%= pokeID %>?_method=DELETE" method="POST">
             <input type="submit" value="Delete"/>
           </form>
