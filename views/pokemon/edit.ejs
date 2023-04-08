@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon App</title>
+</head>
+<body>
+    <h1>Edit</h1>
+    <div>
+        <form action="/pokemon/<%= pokeID %>?_method=PUT" method="POST">
+            <fieldset>
+                <legend>Edit Pokemon</legend>
+                <label>
+                    NAME:<input type="text" name="name"  placeholder="change Pokemon name" />
+                </label>
+                <label>
+                    IMAGE:<input type="url" name="image" placeholder="change image url" />
+                </label>
+            </fieldset>
+            <input type="submit" value="change Pokemon" />
+        </form>
+    </div>
+
+    <a href="/pokemon">Back to Index</a>
+</body>
+</html>

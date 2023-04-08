@@ -1,0 +1,13 @@
+<%- include('./header.ejs', {name: "Pokemon App Home"}) %>
+    <h1>POKEMON</h1>
+    <% for(let i = 0; i < pokes.length; i++) { %>
+        <a href="/pokemon/<%= i %>">
+            <img src=<%= pokes[i].img %> alt="pokemon picture">
+            <h3>Name: <%= pokes[i].name %></h3>
+        </a>
+        <hr>
+    <% } %>
+</body>
+</html>
+</body>
+</html>
